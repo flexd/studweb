@@ -1,3 +1,16 @@
 Det er helt idiotisk å bruke redis her, men jeg gadd ikke knote med å lagre til fil :-D
 
 Kopier example_settings.py til settings.py og fyll inn riktig stasj på de tre variablene der det står <REPLACE ME>
+
+
+Kjøres med cron en gang i blant, jeg kjører full overkill med hver halvtime.
+
+crontab linje som følger:
+
+ SHELL=/bin/bash
+ */30 * * * * source  /home/kristoffer/.virtualenvs/studweb/bin/activate && cd $HOME/code/studweb/ && cronic scrapy crawl studweb
+
+Du vil selvsagt forandre pathen der sånn at den peker til riktig virtualenv, jeg bruker virtualenvwrapper så da ligger de der :-)
+
+Ellers er 'cronic' bare et hendig bash script som supresser output fra cron med mindre output er unormalt, og det kan hentes ned herifra http://habilis.net/cronic/
+
