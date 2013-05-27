@@ -1,0 +1,8 @@
+Scrapy==0.16.4
+Twisted==13.0.0
+lxml==3.2.1
+pyOpenSSL==0.13
+redis==2.7.5
+w3lib==1.2
+wsgiref==0.1.2
+zope.interface==4.0.5
