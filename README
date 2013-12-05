@@ -1,5 +1,7 @@
 Det er helt idiotisk å bruke redis her, men jeg gadd ikke knote med å lagre til fil :-D
 
+Pass på at  libxml2-dev og libxslt-dev er installert før du kjører pip -r requirements.txt for å installere.
+
 Kopier example_settings.py til settings.py og fyll inn riktig stasj på de tre variablene der det står <REPLACE ME>
 
 
