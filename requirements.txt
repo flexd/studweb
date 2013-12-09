@@ -1,4 +1,4 @@
-Scrapy==0.16.4
+Scrapy
 Twisted==13.0.0
 lxml==3.2.1
 pyOpenSSL==0.13
